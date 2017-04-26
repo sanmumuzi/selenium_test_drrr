@@ -6,7 +6,7 @@ browser = webdriver.Chrome()
 browser.get('http://drrr.com')
 assert "DRRR" in browser.title
 elem = browser.find_element_by_name('name')
-elem.send_keys("竜之峰帝人#dimengyan3mu")
+elem.send_keys("your_name")
 elem.send_keys(Keys.RETURN)
 browser.implicitly_wait(2)
 browser.find_element_by_xpath('//*[@id="rooms-filter-support"]/ul/li/form/button[@value="fMCejHcO25"]').click()
